@@ -1,0 +1,258 @@
+Configs: {
+	Headers: {
+		// Fonts: Font Settings
+		// Features: Other Features
+	}
+
+	ClientSideConfig: {
+		// DisplayName: Client Side Config
+
+		ForcedFont: {
+			// Label: Force Localized Font Type
+			/* Tooltip:
+				'''
+				Forces the game to use this type of localized font, disregarding the current language settings.
+				This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
+				''' */
+		}
+
+		LocalizedPrefixPlacement: {
+			// Label: Smart Prefix Position
+			// Tooltip: Changes the position of an item's prefix in certain languages
+		}
+
+		LocalizedPrefixGenderPluralization: {
+			// Label: Smart Prefix Inflection
+			// Tooltip: Changes the inflection of an item's prefix depending on the item in certain languages
+		}
+	}
+
+	LocalizedFont: {
+		// Tooltip: The type of font the game uses. Small changes to the font for different languages are necessary due to Unicode restrictions
+
+		None: {
+			// Label: None
+			// Tooltip: ""
+		}
+
+		Default: {
+			// Label: Default
+			// Tooltip: ""
+		}
+
+		Japanese: {
+			// Label: Japanese
+			// Tooltip: ""
+		}
+
+		Korean: {
+			// Label: Korean
+			// Tooltip: ""
+		}
+	}
+}
+
+Cultures: {
+	Common: {
+		// StandardSubtitle: Standard
+		/* LocalizedFontUnavailable:
+			'''
+			This language cannot be used because it requires a font that is currently not in the mod.
+			Please wait for the next update!
+			''' */
+	}
+
+	English: {
+		// Title: English
+		// Subtitle: United States
+	}
+
+	German: {
+		// Title: German
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Italian: {
+		// Title: Italian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	French: {
+		// Title: French
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Spanish: {
+		// Title: Spanish
+		// Subtitle: Spain
+	}
+
+	Russian: {
+		// Title: Russian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Chinese: {
+		// Title: Chinese
+		// Subtitle: Simplified
+	}
+
+	Portuguese: {
+		// Title: Portuguese
+		// Subtitle: Brazil
+	}
+
+	Polish: {
+		// Title: Polish
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	BritishEnglish: {
+		// Title: English
+		// Subtitle: United Kingdom
+	}
+
+	Japanese: {
+		// Title: Japanese
+		// Subtitle: Hyoujungo
+	}
+
+	Korean: {
+		// Title: Korean
+		// Subtitle: South Korea
+	}
+
+	TraditionalChinese: {
+		// Title: Chinese
+		// Subtitle: Traditional
+	}
+
+	Turkish: {
+		// Title: Turkish
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Thai: {
+		// Title: Thai
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Ukrainian: {
+		// Title: Ukrainian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	MexicanSpanish: {
+		// Title: Spanish
+		// Subtitle: Mexico
+	}
+
+	Czech: {
+		// Title: Czech
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Hungarian: {
+		// Title: Hungarian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	PortugalPortuguese: {
+		// Title: Portuguese
+		// Subtitle: Portugal
+	}
+
+	Swedish: {
+		// Title: Swedish
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Dutch: {
+		// Title: Dutch
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Danish: {
+		// Title: Danish
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	// Vietnamese.Title: Vietnamese
+
+	Finnish: {
+		// Title: Finnish
+		// Subtitle: Kirjakieli
+	}
+
+	Romanian: {
+		// Title: Romanian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Indonesian: {
+		// Title: Indonesian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+
+	Belarusian: {
+		// Title: Belarusian
+		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+	}
+}
+
+Misc: {
+	Error: {
+		/* FontPatchingError:
+			'''
+			There was an error during font patching.
+			Localized fonts will not show up correctly.
+			Please report this bug to the Localization Plus devs immediately.
+			In the meantime, you can try relaunching the game.
+			Click OK to continue anyway.
+			''' */
+		// InvalidGrammaticalGender: Character or name {0} doesn't correspond to any grammatical gender.
+		// InvalidGrammaticalNumber: Character or name {0} doesn't correspond to any default grammatical number.
+		// InvalidInflection: Name {0} couldn't be recognized as a valid inflection name. Make sure the name contains both gender and number.
+		// LPlusNone: Unknown error when parsing file {0} at position {1}, line '{2}'.
+		// LPlusEntryOutside: Error in file {0}: Entry {2} is outside a section.
+		// LPlusSubsectionWithoutSection: Error in file {0}: Subsection {2} is not under any section.
+		// LPlusInvalidSectionOrSubsection: Error in file {0}: Section or subsection {2} wasn't recognized or is malformed.
+		// LPlusSectionTagsUnexpected: Error in file {0}: One or more tags in section or subsection {2} weren't recognized or are unexpected.
+		// LPlusSectionTagsUnexpectedCount: Error in file {0}: The amount of tags in section or subsection {2} wasn't expected.
+		// LPlusMalformedEntry: Entry '{2}' doesn't have a value; it is malformed.
+		// LPlusUnexpectedEntry: Error in file {0}: Number of entries in section or subsection '{2}' wasn't expected.
+		// LPlusBadEntryFormat: Error in file {0}: Entry in section or subsection '{2}' is not the correct format. Please read the inflection file docs again.
+		// LPlusBadSimpleMatch: The string '{2}' is not a valid simple match pattern. Please read the inflection file docs again.
+		// LPlusOverrideOverlap: Error in file {0}: Inflection overrides for item '{2}' overlap. If you're using 'Inflection:', do not use 'Gender:' or 'Number:', and viceversa.
+	}
+}
+
+Commands: {
+	TestPrefixesCommand: {
+		Error: {
+			// LanguageNoInflections: The current language, {0}, with language code {1}, doesn't have an associated inflection file; prefix forms will be the same as the defaults.
+			/* NoArgs:
+				'''
+				Please provide a valid item identifier.
+				For vanilla items, this can be the numerical ID or internal name.
+				For modded items, this has to be the internal name in this format: ModInternalName/ItemInternalName
+				''' */
+			/* UnknownItem:
+				'''
+				Item '{0}' wasn't found.
+				{$NoArgs}
+				''' */
+		}
+
+		/* Success.BasicInfo:
+			'''
+			Item {0} has the inflection {1} with paradigm {2}.
+			Here's how prefixes would look on this item:
+			''' */
+	}
+
+	ItemInflectionsCommand: {
+		// Error.LanguageNoInflections: The current language, {0}, with language code {1}, doesn't have an associated inflection file; items will all have the default inflection.
+		// Advice: This command clogs chat very easily. It is better to use it through the tModLoader console instead. You can do this in multiplayer or by adding -c after the command.
+	}
+}
