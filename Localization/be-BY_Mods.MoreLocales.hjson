@@ -1,258 +1,258 @@
 Configs: {
 	Headers: {
-		// Fonts: Font Settings
-		// Features: Other Features
+		Fonts: Налады шрыфтоў
+		Features: Іншыя функцыі
 	}
 
 	ClientSideConfig: {
-		// DisplayName: Client Side Config
+		DisplayName: Канфігурацыя кліента
 
 		ForcedFont: {
-			// Label: Force Localized Font Type
-			/* Tooltip:
+			Label: Прымусовае выкарыстанне шрыфту
+			Tooltip:
 				'''
-				Forces the game to use this type of localized font, disregarding the current language settings.
-				This is {$Configs.LocalizedFont.None.Label} by default, which means the font will dynamically change with the chosen language.
-				''' */
+				Гэты тып шрыфту будзе ўжывацца прымусова, ігнаруючы бягучыя моўныя налады.
+				Прадвызначаны выкарыстоўваецца {$Configs.LocalizedFont.None.Label} — шрыфт будзе дынамічна мяняцца ў залежнасці ад абранай мовы.
+				'''
 		}
 
 		LocalizedPrefixPlacement: {
-			// Label: Smart Prefix Position
-			// Tooltip: Changes the position of an item's prefix in certain languages
+			Label: Разумнае размяшчэнне прэфікса
+			Tooltip: Змяняе размяшчэнне прэфікса прадметаў ў некаторых мовах
 		}
 
 		LocalizedPrefixGenderPluralization: {
-			// Label: Smart Prefix Inflection
-			// Tooltip: Changes the inflection of an item's prefix depending on the item in certain languages
+			Label: Разумнае скланенне прэфікса
+			Tooltip: Змяняе ў некаторых мовах скланенне прэфікса ў залежнасці ад прадмета 
 		}
 	}
 
 	LocalizedFont: {
-		// Tooltip: The type of font the game uses. Small changes to the font for different languages are necessary due to Unicode restrictions
+		Tooltip: Тып шрыфту, які выкарыстоўвае гульня. Невялікія змены шрыфту для розных моў неабходныя з-за абмежаванняў Unicode
 
 		None: {
-			// Label: None
-			// Tooltip: ""
+			Label: Няма
+			Tooltip: ""
 		}
 
 		Default: {
-			// Label: Default
-			// Tooltip: ""
+			Label: Прадвызначаны
+			Tooltip: ""
 		}
 
 		Japanese: {
-			// Label: Japanese
-			// Tooltip: ""
+			Label: Японскі
+			Tooltip: ""
 		}
 
 		Korean: {
-			// Label: Korean
-			// Tooltip: ""
+			Label: Карэйскі
+			Tooltip: ""
 		}
 	}
 }
 
 Cultures: {
 	Common: {
-		// StandardSubtitle: Standard
-		/* LocalizedFontUnavailable:
+		StandardSubtitle: Стандарт
+		LocalizedFontUnavailable:
 			'''
-			This language cannot be used because it requires a font that is currently not in the mod.
-			Please wait for the next update!
-			''' */
+			Гэтая мова не можа быць ужыта, таму што ў бягучай версіі мадыфікацыі няма патрэбнага шрыфту.
+			Чакайце наступнага абнаўлення!
+			'''
 	}
 
 	English: {
-		// Title: English
-		// Subtitle: United States
+		Title: Англійская
+		Subtitle: Злучаныя Штаты
 	}
 
 	German: {
-		// Title: German
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Нямецкая
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Italian: {
-		// Title: Italian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Італьянская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	French: {
-		// Title: French
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Французская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Spanish: {
-		// Title: Spanish
-		// Subtitle: Spain
+		Title: Іспанская
+		Subtitle: Іспанія
 	}
 
 	Russian: {
-		// Title: Russian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Расейская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Chinese: {
-		// Title: Chinese
-		// Subtitle: Simplified
+		Title: Кітайская
+		Subtitle: Спрошчаная
 	}
 
 	Portuguese: {
-		// Title: Portuguese
-		// Subtitle: Brazil
+		Title: Партугальская
+		Subtitle: Бразілія
 	}
 
 	Polish: {
-		// Title: Polish
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Польская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	BritishEnglish: {
-		// Title: English
-		// Subtitle: United Kingdom
+		Title: Англійская
+		Subtitle: Вялікабрытанія
 	}
 
 	Japanese: {
-		// Title: Japanese
-		// Subtitle: Hyoujungo
+		Title: Японская
+		Subtitle: Хёдзюнга
 	}
 
 	Korean: {
-		// Title: Korean
-		// Subtitle: South Korea
+		Title: Карэйская
+		Subtitle: Паўднёвая Карэя
 	}
 
 	TraditionalChinese: {
-		// Title: Chinese
-		// Subtitle: Traditional
+		Title: Кітайская
+		Subtitle: Традыцыйная
 	}
 
 	Turkish: {
-		// Title: Turkish
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Турэцкая
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Thai: {
-		// Title: Thai
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Тайская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Ukrainian: {
-		// Title: Ukrainian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Украінская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	MexicanSpanish: {
-		// Title: Spanish
-		// Subtitle: Mexico
+		Title: Іспанская
+		Subtitle: Мексіка
 	}
 
 	Czech: {
-		// Title: Czech
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Чэшская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Hungarian: {
-		// Title: Hungarian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Венгерская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	PortugalPortuguese: {
-		// Title: Portuguese
-		// Subtitle: Portugal
+		Title: Партугальская
+		Subtitle: Партугалія
 	}
 
 	Swedish: {
-		// Title: Swedish
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Шведская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Dutch: {
-		// Title: Dutch
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Нідэрландская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Danish: {
-		// Title: Danish
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Дацкая
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
-	// Vietnamese.Title: Vietnamese
+	Vietnamese.Title: В'етнамская
 
 	Finnish: {
-		// Title: Finnish
-		// Subtitle: Kirjakieli
+		Title: Фінская
+		Subtitle: Кірыякіелі
 	}
 
 	Romanian: {
-		// Title: Romanian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Румынская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Indonesian: {
-		// Title: Indonesian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Інданезійская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 
 	Belarusian: {
-		// Title: Belarusian
-		// Subtitle: "{$Cultures.Common.StandardSubtitle}"
+		Title: Беларуская
+		Subtitle: "{$Cultures.Common.StandardSubtitle}"
 	}
 }
 
 Misc: {
 	Error: {
-		/* FontPatchingError:
+		FontPatchingError:
 			'''
-			There was an error during font patching.
-			Localized fonts will not show up correctly.
-			Please report this bug to the Localization Plus devs immediately.
-			In the meantime, you can try relaunching the game.
-			Click OK to continue anyway.
-			''' */
-		// InvalidGrammaticalGender: Character or name {0} doesn't correspond to any grammatical gender.
-		// InvalidGrammaticalNumber: Character or name {0} doesn't correspond to any default grammatical number.
-		// InvalidInflection: Name {0} couldn't be recognized as a valid inflection name. Make sure the name contains both gender and number.
-		// LPlusNone: Unknown error when parsing file {0} at position {1}, line '{2}'.
-		// LPlusEntryOutside: Error in file {0}: Entry {2} is outside a section.
-		// LPlusSubsectionWithoutSection: Error in file {0}: Subsection {2} is not under any section.
-		// LPlusInvalidSectionOrSubsection: Error in file {0}: Section or subsection {2} wasn't recognized or is malformed.
-		// LPlusSectionTagsUnexpected: Error in file {0}: One or more tags in section or subsection {2} weren't recognized or are unexpected.
-		// LPlusSectionTagsUnexpectedCount: Error in file {0}: The amount of tags in section or subsection {2} wasn't expected.
-		// LPlusMalformedEntry: Entry '{2}' doesn't have a value; it is malformed.
-		// LPlusUnexpectedEntry: Error in file {0}: Number of entries in section or subsection '{2}' wasn't expected.
-		// LPlusBadEntryFormat: Error in file {0}: Entry in section or subsection '{2}' is not the correct format. Please read the inflection file docs again.
-		// LPlusBadSimpleMatch: The string '{2}' is not a valid simple match pattern. Please read the inflection file docs again.
-		// LPlusOverrideOverlap: Error in file {0}: Inflection overrides for item '{2}' overlap. If you're using 'Inflection:', do not use 'Gender:' or 'Number:', and viceversa.
+			Падчас абнаўлення шрыфтоў адбылася памылка.
+			Лакалізаваныя шрыфты не будуць адлюстроўвацца як мае быць.
+			Калі ласка, неадкладна паведаміце пра памылку распрацоўшчыкам Localization Plus.
+			Тым часам можаце паспрабаваць перазапусціць гульню.
+			Каб працягнуць, Націсніце «Добра».
+			'''
+		InvalidGrammaticalGender: Персанаж або назва «{0}» не мае адпаведнага граматычнаму роду.
+		InvalidGrammaticalNumber: Персанаж або назва «{0}» не мае адпаведнага прадвызначанага граматычнаму ліку.
+		InvalidInflection: Назва «{0}» не распазнана як дапушчальная. Пераканайцеся, што яна змяшчае і род, і лік.
+		LPlusNone: Невядомая памылка пры разборы файла «{0}»: пазіцыя {1}, радок '{2}'.
+		LPlusEntryOutside: Памылка ў файле «{0}»: запіс {2} знаходзіцца па-за раздзелам.
+		LPlusSubsectionWithoutSection: Памылка ў файле «{0}»: падраздзел 	«{2}» не знаходзіцца ні ў якім раздзеле.
+		LPlusInvalidSectionOrSubsection: Памылка ў файле «{0}»: раздзел або падраздзел «{2}» не быў распазнаны або мае няслушны фармат.
+		LPlusSectionTagsUnexpected: Памылка ў файле {0}: адзін або некалькі цэтлікаў у раздзеле або падраздзеле «{2}» не былі распазнаны або не такія, як чакалася.
+		LPlusSectionTagsUnexpectedCount: Памылка ў файле «{0}»: колькасць тэгаў у раздзеле або падраздзеле «{2}» не супала з чаканай.
+		LPlusMalformedEntry: Запіс «{2}» мае няслушны фармат значэння.
+		LPlusUnexpectedEntry: Памылка ў файле «{0}»: колькасць запісаў у раздзеле або падраздзеле «{2}» не супала з чаканай.
+		LPlusBadEntryFormat: Памылка ў файле «{0}»: запіс у раздзеле або падраздзеле «{2}» не адпавядае правільнаму фармату. Калі ласка, перачытайце дакументацыю файла са словаформамі.
+		LPlusBadSimpleMatch: Радок «{2}» не з'яўляецца дапушчальным простым узорам супадзення. Калі ласка, перачытайце дакументацыю файла са словаформамі.
+		LPlusOverrideOverlap: Памылка ў файле «{0}»: некалькі словаформ для прадмета «{2}» ствараюць канфлікт. Калі вы выкарыстоўваеце параметр 'Inflection:', не ўжывайце адначасова 'Gender:' або 'Number:', і наадварот.
 	}
 }
 
 Commands: {
 	TestPrefixesCommand: {
 		Error: {
-			// LanguageNoInflections: The current language, {0}, with language code {1}, doesn't have an associated inflection file; prefix forms will be the same as the defaults.
-			/* NoArgs:
+			LanguageNoInflections: Бягучая мова ({0}) з  кодам «{1}», не мае файла са словаформамі; формы прэфіксаў будуць як прадвызначаныя.
+			NoArgs:
 				'''
-				Please provide a valid item identifier.
-				For vanilla items, this can be the numerical ID or internal name.
-				For modded items, this has to be the internal name in this format: ModInternalName/ItemInternalName
-				''' */
-			/* UnknownItem:
+				Калі ласка, вызначыце слушны ідэнтыфікатар прадмета.
+				Для звычайных прадметаў гэта можа быць лікавы ID або ўнутраная назва.
+				Для прадметаў з мадыфікацый гэта павінна быць унутраная назва ў адпаведным фармаце: ModInternalName/ItemInternalName
 				'''
-				Item '{0}' wasn't found.
+			UnknownItem:
+				'''
+				Прадмет «{0}» не быў знойдзены.
 				{$NoArgs}
-				''' */
+				'''
 		}
 
-		/* Success.BasicInfo:
+		Success.BasicInfo:
 			'''
-			Item {0} has the inflection {1} with paradigm {2}.
-			Here's how prefixes would look on this item:
-			''' */
+			Прадмет «{0}» мае скланенне {1} з парадыгмай {2}.
+			Вось як будуць выглядаць прэфіксы:
+			'''
 	}
 
 	ItemInflectionsCommand: {
-		// Error.LanguageNoInflections: The current language, {0}, with language code {1}, doesn't have an associated inflection file; items will all have the default inflection.
-		// Advice: This command clogs chat very easily. It is better to use it through the tModLoader console instead. You can do this in multiplayer or by adding -c after the command.
+		Error.LanguageNoInflections: Бягучая мова ({0}) з  кодам «{1}», не мае файла са словаформамі; усе прадметы будуць мець прадвызначанае скланенне.
+		Advice: Гэтая каманда вельмі хутка засмечвае чат. Лепш выкарыстоўваць яе праз кансоль tModLoader. Гэта можна зрабіць у шматкарыстальніцкай гульні або дадаўшы -c пасля самой каманды.
 	}
 }
