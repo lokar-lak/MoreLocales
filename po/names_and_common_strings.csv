@@ -1,0 +1,131 @@
+﻿category,term,count,note
+Biome/Place,Dungeon,150,
+Biome/Place,Crimson,109,
+Biome/Place,Jungle,95,
+Biome/Place,Mushroom,72,
+Biome/Place,Corruption,64,
+Biome/Place,Snow,63,
+Biome/Place,Desert,62,
+Biome/Place,Sky,57,
+Biome/Place,Hallow,47,
+Biome/Place,Granite,42,
+Biome/Place,Marble,36,
+Biome/Place,Meteorite,36,
+Biome/Place,Caverns,30,
+Biome/Place,Space,25,
+Biome/Place,Ocean,25,
+Biome/Place,Underworld,24,
+Biome/Place,Hell,18,
+Biome/Place,Temple,17,
+Event,Old One's Army,34,
+Event,Blood Moon,33,
+Event,Goblin Army,14,
+Event,Frost Legion,12,
+Event,Solar Eclipse,11,
+Event,Pumpkin Moon,9,
+Event,Frost Moon,8,
+Event,Pirate Invasion,5,
+Event,Martian Invasion,3,
+Boss,Skeletron (Prime/Jr),40,
+Boss,Golem,28,
+Boss,Moon Lord,19,
+Boss,Eater of Worlds,19,
+Boss,Plantera,18,
+Boss,Brain of Cthulhu,15,
+Boss,Eye of Cthulhu,14,
+Boss,Queen Bee,14,
+Boss,Wall of Flesh,13,
+Boss,The Destroyer,13,
+Boss,Deerclops,13,
+Boss,Betsy,13,
+Boss,Queen Slime,11,
+Boss,Torch God,11,
+Boss,Duke Fishron,10,
+Boss,Empress of Light,10,
+Town NPC,Pirate,29,
+Town NPC,Guide,27,
+Town NPC,Dryad,19,
+Town NPC,Truffle,17,
+Town NPC,Princess,16,
+Town NPC,Merchant,15,
+Town NPC,Nurse,15,
+Town NPC,Angler,15,
+Town NPC,Mechanic,12,
+Town NPC,Demolitionist,10,
+Town NPC,Wizard,8,
+Town NPC,Cyborg,8,
+Town NPC,Clothier,8,
+Material/Ore,Hallowed,70,
+Material/Ore,Obsidian,54,
+Material/Ore,Chlorophyte,39,
+Material/Ore,Titanium,36,
+Material/Ore,Adamantite,33,
+Material/Ore,Mythril,33,
+Material/Ore,Cobalt,31,
+Material/Ore,Orichalcum,28,
+Material/Ore,Demonite,27,
+Material/Ore,Crimtane,27,
+Material/Ore,Palladium,23,
+Material/Ore,Hellstone,14,
+Material/Ore,Luminite,11,
+Material/Ore,Shroomite,10,
+Celestial,Solar,69,
+Celestial,Nebula,68,
+Celestial,Stardust,59,
+Celestial,Vortex,52,
+Common string,Mod/Mods,253,
+Common string,damage,275,
+Common string,increases/increased,527,
+Common string,banner,321,
+Common string,wall,305,
+Common string,chest,225,
+Common string,world,221,
+Common string,slime,206,
+Common string,summons/summon,304,
+Common string,chance,152,
+Common string,speed,130,
+Common string,dungeon,152,
+Common string,dye,171,
+Common string,wood,160,
+Common string,critical strike chance,105,
+Common string,melee/magic/ranged,237,
+Common string,movement speed,43,
+Common string,life/mana,234,
+Common string,music box,102,
+Common string,grants immunity,27,
+Dev credit,Crowno,41,
+Dev credit,Myhre,22,
+Dev credit,Lazure,21,
+Dev credit,Garner,18,
+Dev credit,Cenx,12,
+Dev credit,Criddle,12,
+collision: T1,Summon / Summons / Summoning,295,3 senses: verb 'summon the boss' vs stat 'Summon damage' vs tooltip 'Summons a sentry'
+collision: T1,Increase / Increases / Boost / Bonus,411,4 synonyms map to 1-2 Belarusian verbs; sets the voice of all item tooltips
+collision: T1,Speed / Rate / Velocity,141,3 distinct targets: movement speed vs fire rate vs projectile velocity
+collision: T1,Fish / Fishing,205,28 context categories: critter vs skill vs 'Fishing Power'; not one Belarusian word covers all
+collision: T1,Charge / Charged,19,5 senses: 'charged arrow' (empowered) / 'hits charge an explosion' (build-up) / weapon name / 'charge at' (attack) / 'charged with' (imbued)
+collision: T2,Critical,110,mostly 'critical strike chance' but also adjective 'critical to the lifecycle'
+collision: T2,Chance,149,near-monosemy but 149 tooltip repetitions demand one fixed word; 'critical strike chance' vs 'chance to save ammo' vs 'chance to poison'
+collision: T2,Power,87,21 categories: 'Magic Power' buff vs narrative 'power of Corruption' vs stat value
+collision: T2,Fire / Flame / Inferno,133,'On Fire!' debuff vs damage element vs narrative 'flames / inferno'
+collision: T2,Light / Heavy,91,Prefix.Light / Prefix.Heavy (weight modifier) vs 'spirit of light' / illumination
+collision: T2,Cursed / Curse,106,24 categories: debuff vs weapon-imbue vs narrative 'lift his curse'
+collision: T2,Dye / Paint,224,two DIFFERENT game systems (character dyes vs block paint); never conflate
+collision: T2,Gold / Golden,154,metal/coins vs 'Gold' critter variant (Gold Bunny/Worm = separate concept)
+collision: T3,Defense / Defence,38,stat 'Defense' vs 'world defense' vs buff name 'Bast Defense'
+collision: T3,Health / Life,45,two English words = one stat ('increase your health' vs 'life regeneration')
+collision: T3,Master / Masterful,29,'Master mode' (difficulty) vs 'their master' (NPC) vs Prefix.Masterful
+collision: T3,Seed,26,plant seeds vs WORLD seed (CLI / Anniversary / Remix seed)
+collision: T3,Armor / Armour,35,stat vs 'suit of armor' vs Broken Armor buff
+collision: T3,Broken,19,Prefix.Broken vs Broken Armor debuff vs item 'Broken Hero Sword'
+collision: T3,Frozen,49,debuff vs ice-themed items ('Frozen Chest') vs 'Time Frozen'
+collision: T3,Color / Gray / Grey / Centre,55,spelling variants - pick ONE Belarusian target per pair
+collision: T4,Sentry / Sentinel,14,CommonItemTooltip.Sentry vs narrative 'a lethal sentry'
+collision: T4,Pierce / Piercing / Penetration,6,'piercing bolts' vs 'armor penetration'
+collision: T4,Buff,7,buff category vs 'Quick Buff' button vs verb 'stacking buffs'
+collision: T4,Rod / Staff / Wand,83,all 'weapon' suffixes - need consistent word per type
+collision: T4,Rock / Stone / Boulder,144,'Friendly Boulder' pet vs RPS 'rock' vs 'stone' blocks
+collision: T4,Hide,24,tModLoader 'hide code/resources' vs 'hide armor' vs bestiary 'hide inside'
+collision: T4,Trap,43,placed trap items (Dart/Flame Trap) vs verb 'placing traps' vs 'No Traps world'
+collision: T4,Shadow,43,Shadow Orb/Candle/Mimic (Corruption items) vs 'shadow magic' vs 'spirits of light and dark'
+collision: T4,Inferno,12,'Cursed Inferno' debuff vs 'Inferno' potion buff vs weapon 'Brand of the Inferno'
