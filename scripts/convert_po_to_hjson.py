@@ -6,14 +6,14 @@ and formatting are preserved, and only leaf values are updated. For every .po
 entry (keyed by its msgctxt dotted path):
 
   * msgstr is non-empty  -> a real translation, so its value is written.
-  * msgstr is empty      -> untranslated, so a blank value ("") is written.
+  * msgstr is empty      -> untranslated, so the English msgid is written.
 
 Usage:
     python3 scripts/convert_po_to_hjson.py --force
 
 By default the result is written to be-BY.hjson.new; pass --force to overwrite
 the real be-BY.hjson (a .backup is saved first). Use --dry-run to preview how
-many strings would be translated vs kept blank.
+many strings would be translated vs falling back to English.
 """
 
 from __future__ import annotations
@@ -39,10 +39,10 @@ except ImportError:
 
 
 def load_po_entries(po_path: str):
-    """Return a list of (msgctxt, msgstr) for every entry in the .po file."""
+    """Return a list of (msgctxt, msgid, msgstr) for every entry in the .po file."""
     if polib is not None:
         po = polib.pofile(po_path)
-        return [(e.msgctxt or "", e.msgstr or "") for e in po if e.msgctxt]
+        return [(e.msgctxt or "", e.msgid or "", e.msgstr or "") for e in po if e.msgctxt]
     return _parse_po_manual(po_path)
 
 
@@ -55,7 +55,7 @@ def _parse_po_manual(po_path: str):
         line = raw.rstrip("\n")
         if line == "":
             if section == "msgstr" and ctx:
-                entries.append((ctx, mstr))
+                entries.append((ctx, mid, mstr))
             ctx = mid = mstr = ""
             section = None
             continue
@@ -64,13 +64,18 @@ def _parse_po_manual(po_path: str):
             ctx = m.group(1).replace('\\"', '"').replace("\\\\", "\\")
             section = "msgctxt"
             continue
+        m = re.match(r'^msgid "((?:[^"\\]|\\.)*)"$', line)
+        if m:
+            mid = _unescape(m.group(1))
+            section = "msgid"
+            continue
         m = re.match(r'^msgstr "((?:[^"\\]|\\.)*)"$', line)
         if m:
             mstr = _unescape(m.group(1))
             section = "msgstr"
             continue
     if ctx:
-        entries.append((ctx, mstr))
+        entries.append((ctx, mid, mstr))
     return entries
 
 
@@ -242,9 +247,9 @@ def main():
 
     entries = load_po_entries(po_path)
     value_map = {}
-    for ctx, mstr in entries:
-        # Blank msgstr marks an untranslated string -> blank value.
-        value_map[ctx] = mstr
+    for ctx, mid, mstr in entries:
+        # Blank msgstr marks an untranslated string -> fall back to English msgid.
+        value_map[ctx] = mstr if mstr else mid
 
     with open(base_path, "r", encoding="utf-8") as f:
         text = f.read()
@@ -258,9 +263,9 @@ def main():
         sys.stderr.write(f"ERROR: patched output did not re-parse as Hjson: {e}\n")
         sys.exit(1)
 
-    translated = sum(1 for v in value_map.values() if v != "")
-    blank = len(value_map) - translated
-    print(f"Entries from .po: {len(value_map)} (translated: {translated}, blank: {blank})")
+    translated = sum(1 for _, _, mstr in entries if mstr)
+    fallback = len(entries) - translated
+    print(f"Entries from .po: {len(entries)} (translated: {translated}, English fallback: {fallback})")
     print(f"Patched leaf values: {changed}")
 
     if args.dry_run:
